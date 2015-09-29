@@ -45,7 +45,7 @@ public class GitLab implements EntryPoint {
 
 
 	private final FlexTable flexTable = new FlexTable();
-
+	private final FlexTable flexTable2 = new FlexTable(); //change
 
 	final LoadUsersServiceAsync service = GWT.create(LoadUsersService.class);
 
@@ -83,7 +83,7 @@ public class GitLab implements EntryPoint {
 	public void displayUsers(List<IUser> users)
 	{
 
-		RootPanel.get("root").add(flexTable);
+		RootPanel.get("root").add(flexTable2); //put flexTable2 here, hoping this will screw stuff up cuz its empty
 		
 		flexTable.setText(0,0, "Name");
 		
