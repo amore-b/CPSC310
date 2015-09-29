@@ -68,6 +68,7 @@ public class GitLab implements EntryPoint {
 			public void onSuccess(List<IUser> result) {
 				displayUsers(result);
 				Window.alert("Hello");
+				Window.alert("Whoops I'm Changing Stuff");
 				
 			}});
 	
